@@ -1,0 +1,169 @@
+//===============================================================
+//INDEX OF AUTH.SCSS
+// 1º) COMMON STILES
+//===============================================================
+
+//===============================================================
+// 1º) COMMON ESTILES
+//===============================================================
+.auth-wrapper {
+    background: var(--surface);
+    min-height: 100vh;
+}
+
+.auth-back {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--text-secondary);
+    }
+}
+
+.auth-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border: 1px solid $border;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 
+                0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.auth-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.auth-brand {
+    margin-bottom: 0.8rem;
+
+    .img-logo{
+        width: 200px;
+    }
+}
+
+.logo-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+}
+
+.text-display {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.auth-subtitle {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+    margin: 0;
+}
+
+.auth-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.auth-input {
+    height: 40px;
+    border: 0.5px solid $border;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    background: var(--white);
+    font-family: var(--font-primary);
+
+    &:focus {
+        border-color: var(--text-primary);
+        box-shadow: none;
+    }
+
+    &::placeholder {
+        color: var(--text-muted);
+    }
+}
+
+.auth-remember {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.form-check-input {
+    background-color: var(--white);
+    border: 0.5px solid $border;
+
+    &:checked {
+        background-color: var(--text-primary);
+        border-color: var(--text-primary);
+    }
+
+    &:focus {
+        border-color: var(--text-primary);
+        box-shadow: none;
+    }
+}
+
+.auth-forgot {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--text-primary);
+    }
+}
+
+.auth-btn {
+    height: 40px;
+    background: var(--text-primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    transition: opacity 0.15s;
+    width: 100%;
+
+    &:hover {
+        background: var(--text-primary);
+        color: var(--white);
+        opacity: 0.85;
+    }
+}
+
+.auth-footer {
+    border-top: 0.5px solid $border;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+
+    p {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+        margin: 0;
+    }
+
+    span {
+        font-size: 0.72rem;
+        color: var(--text-secondary);
+    }
+
+    .link{
+      color: var(--text-link);
+    }
+}

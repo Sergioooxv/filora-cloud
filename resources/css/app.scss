@@ -1,0 +1,33 @@
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Batang&display=swap');
+
+
+@import './variables/variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Base
+@import './base/reset';
+@import './base/typography';
+// Components
+@import './components/buttons';
+@import './components/forms';
+@import './components/modals';
+@import './components/sidebar';
+@import './components/navbar';
+@import './components/cards';
+@import './components/badges';
+@import './components/tables';
+@import './components/dropzone';
+@import './components/context-menu';
+@import './components/breadcrumb';
+@import './components/alerts';
+@import './components/storage-bar';
+
+// Pages
+@import './pages/auth';
+@import './pages/dashboard';
+@import './pages/explorer';
+@import './pages/settings';
+@import './pages/admin';

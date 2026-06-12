@@ -1,0 +1,92 @@
+// ====================================
+// Filora (Product - Variables)
+// ====================================
+$font-primary:   'Inter', sans-serif;
+$font-serif:     'Batanga', serif;
+$font-mono:      'JetBrains Mono', monospace;
+
+//Colores modo claro
+$white:          #ffffff;
+$surface:        #fafafa;
+$surface-2:      #f5f5f5;
+$border:         #ebebeb;
+$border-strong:  #d4d4d4;
+
+$text-primary:   #111111;
+$text-secondary: #555555;
+$text-muted:     #999999;
+$text-disabled:  #cccccc;
+$text-link: #3b82f6;
+
+//Acento - un solo color, neutro y serio
+$accent:         #171717;
+$accent-hover:   #000000;
+$accent-bg:      #f5f5f5;
+
+//Colores modo oscuro
+$dark-base:      #0a0a0a;
+$dark-surface:   #111111;
+$dark-surface-2: #1a1a1a;
+$dark-border:    #222222;
+$dark-border-strong: #2e2e2e;
+
+$dark-text-primary:   #f5f5f5;
+$dark-text-secondary: #888888;
+$dark-text-muted:     #444444;
+
+//Acento oscuro
+$dark-accent:    #f5f5f5;
+$dark-accent-hover: #ffffff;
+
+//Espacio
+$space-xs:   4px;
+$space-sm:   8px;
+$space-md:   16px;
+$space-lg:   24px;
+$space-xl:   40px;
+$space-2xl:  64px;
+
+// Border radius
+$radius-sm:  6px;
+$radius-md:  10px;
+$radius-lg:  16px;
+$radius-xl:  24px;
+
+// Variables CSS (para usar con var() en Bootstrap)
+:root {
+    --accent:          #{$accent};
+    --accent-hover:    #{$accent-hover};
+    --accent-bg:       #{$accent-bg};
+    --text-primary:    #{$text-primary};
+    --text-secondary:  #{$text-secondary};
+    --text-muted:      #{$text-muted};
+    --text-disabled:   #{$text-disabled};
+    --border:          #{$border};
+    --border-strong:   #{$border-strong};
+    --surface:         #{$surface};
+    --surface-2:       #{$surface-2};
+    --white:           #{$white};
+    --font-primary:    #{$font-primary};
+    --font-serif:      #{$font-serif};
+    --font-mono:       #{$font-mono};
+    --radius-sm:       #{$radius-sm};
+    --radius-md:       #{$radius-md};
+    --radius-lg:       #{$radius-lg};
+    --radius-xl:       #{$radius-xl};
+    --text-link:       #{$text-link};
+}
+
+// Variables modo oscuro
+[data-theme="dark"] {
+    --accent:          #{$dark-accent};
+    --accent-hover:    #{$dark-accent-hover};
+    --accent-bg:       #{$dark-surface-2};
+    --text-primary:    #{$dark-text-primary};
+    --text-secondary:  #{$dark-text-secondary};
+    --text-muted:      #{$dark-text-muted};
+    --border:          #{$dark-border};
+    --border-strong:   #{$dark-border-strong};
+    --surface:         #{$dark-base};
+    --surface-2:       #{$dark-surface};
+    --white:           #{$dark-surface-2};
+}
