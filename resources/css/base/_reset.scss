@@ -52,13 +52,23 @@ select {
     font-family: var(--font-primary);
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1.2;
     color: var(--text-primary);
+}
+
+.link {
+    color: var(--text-link);
 }

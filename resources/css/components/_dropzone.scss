@@ -1,0 +1,55 @@
+//======================================================================
+// DRAG & DROP DASHBOARD
+//======================================================================
+.card-dragdrop {
+    background: var(--surface-2);
+    padding: 1.5rem 2rem;
+    border: 2px dashed var(--border-strong);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* Efecto sutil cuando el usuario pasa el ratón por encima */
+.card-dragdrop:hover {
+    background: #e9efff;
+    border-color: #2563eb;
+}
+
+.icon-dragdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--accent);
+    border-radius: var(--radius-md);
+    color: white;
+    flex-shrink: 0; /* Evita que el icono se deforme si el texto es largo */
+}
+
+.text-dragdrop {
+    display: flex;
+    flex-direction: column; /* Alinea el h3 y el p de forma vertical */
+    justify-content: center;
+    gap: 0.25rem; /* Espaciado controlado entre título y subtítulo */
+}
+
+.text-dragdrop h3 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0; /* Quitamos márgenes por defecto de Bootstrap */
+    padding: 0;
+}
+
+.text-dragdrop p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0; /* Quitamos márgenes por defecto de Bootstrap */
+    padding: 0;
+}
