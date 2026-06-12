@@ -1,59 +1,213 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<div align="center">
+  <img src="public/img/logo/filora-little.png" alt="Filora" width="200">
+  
+  # Filora
+  
+  **Self-hosted cloud storage for teams and individuals**
+  
+  *A product by [Akapell Labs](https://akapelllabs.com)*
+ 
+  ![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat-square&logo=laravel)
+  ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=flat-square&logo=bootstrap)
+  ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+  ![Status](https://img.shields.io/badge/Status-Beta-orange?style=flat-square)
+</div>
+---
+ 
+## ¿Qué es Filora?
+ 
+Filora es una solución de almacenamiento en la nube **open source y self-hosted** —
+una alternativa a Google Drive y Dropbox que puedes instalar en tu propio servidor.
+ 
+Tus archivos, tu servidor, tus reglas.
+ 
+✅ Sin dependencias de terceros  
+✅ Control total de tus datos  
+✅ Cumplimiento RGPD  
+✅ Código abierto y auditable  
+ 
+---
+ 
+## ✨ Características
+ 
+- 📁 **Explorador de archivos** — gestión completa de archivos y carpetas
+- 👥 **Gestión de usuarios** — roles, permisos y equipos
+- 🔗 **Compartir archivos** — enlaces públicos y privados
+- 🔒 **Seguridad** — 2FA, logs de actividad, cifrado
+- 🌙 **Modo oscuro** — interfaz adaptable
+- 📊 **Panel de admin** — gestión centralizada
+- 📱 **Responsive** — funciona en móvil y escritorio
+---
+ 
+## 🚀 Instalación
+ 
+### Requisitos
+ 
+```
+PHP        >= 8.2
+Composer   >= 2.x
+Node.js    >= 18.x
+MySQL      >= 8.x
+```
+ 
+### Pasos
+ 
+**1. Clona el repositorio:**
+```bash
+git clone https://github.com/Sergioooxv/filora-cloud.git
+cd filora-cloud
+```
+ 
+**2. Instala las dependencias:**
+```bash
+composer install
+npm install
+```
+ 
+**3. Configura el entorno:**
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+ 
+**4. Configura la base de datos en `.env`:**
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=filora
+DB_USERNAME=tu_usuario
+DB_PASSWORD=tu_contraseña
+```
+ 
+**5. Ejecuta las migraciones:**
+```bash
+php artisan migrate
+```
+ 
+**6. Crea el administrador:**
+```bash
+php artisan filora:install
+```
+ 
+**7. Compila los assets:**
+```bash
+npm run build
+```
+ 
+**8. Inicia el servidor:**
+```bash
+php artisan serve
+```
+ 
+Accede a `http://localhost:8000` con las credenciales que creaste en el paso 6.
+ 
+---
+ 
+## 🗂️ Estructura del proyecto
+ 
+```
+filora/
+├── app/
+│   ├── Http/Controllers/
+│   ├── Models/
+│   └── Console/Commands/     ← comandos Artisan
+├── resources/
+│   ├── css/
+│   │   ├── components/       ← estilos de componentes
+│   │   ├── pages/            ← estilos por página
+│   │   └── variables/        ← variables globales
+│   ├── js/
+│   │   ├── components/       ← lógica JS por componente
+│   │   └── utils/            ← utilidades
+│   └── views/
+│       ├── layouts/          ← layouts base
+│       ├── auth/             ← login, forgot-password, reset
+│       ├── dashboard/        ← panel principal
+│       ├── explorer/         ← explorador de archivos
+│       ├── admin/            ← panel de administración
+│       └── components/       ← componentes blade reutilizables
+└── public/
+    └── img/
+        └── logo/
+```
+ 
+---
+ 
+## 🤝 Contribuir
+ 
+Las contribuciones son bienvenidas. Sigue estos pasos:
+ 
+**1. Haz fork del repositorio**
+ 
+**2. Crea una rama para tu feature:**
+```bash
+git checkout -b feat/nombre-de-tu-feature
+```
+ 
+**3. Convención de commits** — usamos [Conventional Commits](https://www.conventionalcommits.org):
+ 
+| Prefijo | Uso |
+|---------|-----|
+| `feat:` | Nueva funcionalidad |
+| `fix:` | Corrección de bug |
+| `docs:` | Cambios en documentación |
+| `style:` | Cambios de formato, sin lógica |
+| `refactor:` | Refactorización de código |
+| `test:` | Añadir o modificar tests |
+| `chore:` | Tareas de mantenimiento |
+ 
+**Ejemplos:**
+```bash
+git commit -m "feat: añadir drag & drop en explorador"
+git commit -m "fix: corregir error en subida de archivos > 100MB"
+git commit -m "docs: actualizar instrucciones de instalación"
+```
+ 
+**4. Push a tu rama:**
+```bash
+git push origin feat/nombre-de-tu-feature
+```
+ 
+**5. Abre un Pull Request** describiendo los cambios realizados.
+ 
+---
+ 
+## 🐛 Reportar bugs
+ 
+Abre un [issue](https://github.com/Sergioooxv/filora-cloud/issues) incluyendo:
+ 
+- Descripción del problema
+- Pasos para reproducirlo
+- Comportamiento esperado vs actual
+- Versión de Filora, PHP y sistema operativo
+---
+ 
+## 📋 Roadmap
+ 
+- [x] Sistema de autenticación
+- [ ] Explorador de archivos
+- [ ] Subida de archivos con drag & drop
+- [ ] Compartir archivos por enlace
+- [ ] Panel de administración
+- [ ] Gestión de usuarios y roles
+- [ ] Modo oscuro
+- [ ] API REST
+- [ ] Cliente de escritorio
+- [ ] Aplicación móvil
+---
+ 
+## 📄 Licencia
+ 
+Filora es software open source bajo la licencia [MIT](LICENSE).
+ 
+---
+ 
+<div align="center">
+  <p>Hecho con ❤️ por <a href="https://akapelllabs.com">Akapell Labs</a></p>
+  <p>
+    <a href="https://akapelllabs.com">Web</a> ·
+    <a href="https://github.com/Sergioooxv/filora-cloud/issues">Issues</a> ·
+    <a href="https://github.com/Sergioooxv/filora-cloud/discussions">Discussions</a>
+  </p>
+</div>
