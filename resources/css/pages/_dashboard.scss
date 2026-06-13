@@ -1,3 +1,90 @@
 .app-body {
     background: var(--surface);
 }
+
+.app-main {
+    overflow-y: auto;
+}
+
+.dashboard-titles {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    letter-spacing: 0.01em;
+}
+
+.folder-recent-card {
+    background: var(--white);
+    border: 0.5px solid $border;
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s;
+
+    &:hover {
+        border-color: $border-strong;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .icon-folder {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--radius-md);
+        margin-bottom: 1rem;
+    }
+
+    // Colores de carpetas
+    .folder-blue {
+        background: rgba(#93c5fd, 0.2);
+        color: #2563eb;
+        border: 0.5px solid rgba(#93c5fd, 0.4);
+    }
+
+    .folder-green {
+        background: rgba(#86efac, 0.2);
+        color: #16a34a;
+        border: 0.5px solid rgba(#86efac, 0.4);
+    }
+
+    .folder-amber {
+        background: rgba(#fcd34d, 0.2);
+        color: #d97706;
+        border: 0.5px solid rgba(#fcd34d, 0.4);
+    }
+
+    .folder-rose {
+        background: rgba(#fda4af, 0.2);
+        color: #e11d48;
+        border: 0.5px solid rgba(#fda4af, 0.4);
+    }
+
+    .text-folder {
+        h4 {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 3px;
+        }
+
+        p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+    }
+}
+
+//Sección de archivos
+.archive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span{
+        color: var(--text-muted);
+        font-size: 0.85rem;
+    }
+}

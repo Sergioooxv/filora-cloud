@@ -1,0 +1,28 @@
+.admin-badge {
+    font-size: 0.65rem;
+    font-weight: 600;
+    background: var(--text-primary);
+    color: var(--white);
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.navbar-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+    border: 0.5px solid $border;
+    transition: all 0.15s;
+
+    &:hover {
+        color: var(--text-primary);
+        border-color: $border-strong;
+    }
+}

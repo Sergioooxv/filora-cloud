@@ -5,10 +5,10 @@
     <div class="row d-flex justify-content-center align-items-center mb-3">
         <div class="card-dragdrop w-100">
             <div class="icon-dragdrop">
-                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="17 8 12 3 7 8" />
+                    <line x1="12" y1="3" x2="12" y2="15" />
                 </svg>
             </div>
             <div class="text-dragdrop">
@@ -17,15 +17,16 @@
             </div>
         </div>
     </div>
-    <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-lg-12 mb-1">
-            <h4>Carpetas Recientes</h4>
+    <div class="row g-3">
+        <div class="col-lg-12 mt-4">
+            <h4 class="dashboard-titles">Carpetas Recientes</h4>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 col-md-6">
             <div class="folder-recent-card">
-                <div class="icon-folder">
-                    <svg width="40px" height="40px" viewBox="0 0 15 15" version="1.1" id="rocket" xmlns="http://www.w3.org/2000/svg">
-                        <path id="path7143" d="M12.5547,1c-2.1441,0-5.0211,1.471-6.9531,4H4&#xA;&#x9;C2.8427,5,2.1794,5.8638,1.7227,6.7773L1.1113,8h1.4434H4l1.5,1.5L7,11v1.4453v1.4434l1.2227-0.6113&#xA;&#x9;C9.1362,12.8206,10,12.1573,10,11V9.3984c2.529-1.932,4-4.809,4-6.9531V1H12.5547z M10,4c0.5523,0,1,0.4477,1,1l0,0&#xA;&#x9;c0,0.5523-0.4477,1-1,1l0,0C9.4477,6,9,5.5523,9,5v0C9,4.4477,9.4477,4,10,4L10,4z M3.5,10L3,10.5C2.2778,11.2222,2,13,2,13&#xA;&#x9;s1.698-0.198,2.5-1L5,11.5L3.5,10z" />
+                <div class="icon-folder folder-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
                     </svg>
                 </div>
                 <div class="text-folder">
@@ -34,48 +35,166 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 col-md-6">
             <div class="folder-recent-card">
-                <div class="icon-folder">
-                    <svg width="40px" height="40px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="ic_fluent_color_24_filled" fill="#212121" fill-rule="nonzero">
-                                <path d="M3.83904058,5.85749561 C6.78004581,1.94188971 12.8686707,0.802505202 17.2029394,3.497377 C21.4827525,6.15839057 23.0567972,11.2744655 21.303866,16.0747407 C19.648689,20.6073231 15.2875295,22.403209 12.1442101,20.1231428 C10.9667425,19.2690444 10.5102901,18.1984035 10.2896576,16.4593132 L10.1842745,15.4713913 L10.1388589,15.073954 C10.0162342,14.1399065 9.82780748,13.7214296 9.43453605,13.5022264 C8.89894535,13.2036966 8.54231757,13.1967226 7.83905282,13.4692784 L7.48794193,13.6148779 L7.30920754,13.6928218 C6.29543196,14.1331038 5.62104161,14.2877923 4.76804588,14.1090543 L4.56779442,14.0618665 L4.40426138,14.0152691 C1.61529547,13.1510586 1.20220653,9.36813303 3.83904058,5.85749561 Z M16.7670717,10.5795744 C16.9457489,11.2464071 17.6311701,11.6421352 18.2980028,11.4634579 C18.9648354,11.2847806 19.3605635,10.5993594 19.1818862,9.93252681 C19.003209,9.26569418 18.3177878,8.86996607 17.6509552,9.04864333 C16.9841225,9.2273206 16.5883944,9.91274179 16.7670717,10.5795744 Z M17.2616616,14.0682389 C17.4403389,14.7350716 18.1257601,15.1307997 18.7925927,14.9521224 C19.4594253,14.7734451 19.8551535,14.0880239 19.6764762,13.4211913 C19.4977989,12.7543587 18.8123777,12.3586306 18.1455451,12.5373078 C17.4787125,12.7159851 17.0829844,13.4014063 17.2616616,14.0682389 Z M14.7885641,7.57689062 C14.9672413,8.24372325 15.6526625,8.63945136 16.3194952,8.4607741 C16.9863278,8.28209683 17.3820559,7.59667564 17.2033786,6.92984301 C17.0247014,6.26301038 16.3392802,5.86728227 15.6724475,6.04595953 C15.0056149,6.2246368 14.6098868,6.91005799 14.7885641,7.57689062 Z M14.7600823,16.5752747 C14.9387596,17.2421074 15.6241808,17.6378355 16.2910134,17.4591582 C16.9578461,17.280481 17.3535742,16.5950598 17.1748969,15.9282271 C16.9962196,15.2613945 16.3107985,14.8656664 15.6439658,15.0443437 C14.9771332,15.2230209 14.5814051,15.9084421 14.7600823,16.5752747 Z M11.2631594,6.60529725 C11.4418366,7.27212988 12.1272578,7.66785799 12.7940904,7.48918073 C13.4609231,7.31050346 13.8566512,6.62508227 13.6779739,5.95824964 C13.4992967,5.29141701 12.8138755,4.8956889 12.1470428,5.07436616 C11.4802102,5.25304343 11.0844821,5.93846462 11.2631594,6.60529725 Z" id="🎨-Color"></path>
-                            </g>
-                        </g>
+                <div class="icon-folder folder-green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
                     </svg>
                 </div>
                 <div class="text-folder">
-                    <h4>Marketing</h4>
-                    <p>24 elementos · 3.2 GB</p>
+                    <h4>Diseño</h4>
+                    <p>8 elementos · 1.4 GB</p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 col-md-6">
             <div class="folder-recent-card">
-                <div class="icon-folder">
-                    <svg width="40px" height="40px" viewBox="0 0 15 15" version="1.1" id="rocket" xmlns="http://www.w3.org/2000/svg">
-                        <path id="path7143" d="M12.5547,1c-2.1441,0-5.0211,1.471-6.9531,4H4&#xA;&#x9;C2.8427,5,2.1794,5.8638,1.7227,6.7773L1.1113,8h1.4434H4l1.5,1.5L7,11v1.4453v1.4434l1.2227-0.6113&#xA;&#x9;C9.1362,12.8206,10,12.1573,10,11V9.3984c2.529-1.932,4-4.809,4-6.9531V1H12.5547z M10,4c0.5523,0,1,0.4477,1,1l0,0&#xA;&#x9;c0,0.5523-0.4477,1-1,1l0,0C9.4477,6,9,5.5523,9,5v0C9,4.4477,9.4477,4,10,4L10,4z M3.5,10L3,10.5C2.2778,11.2222,2,13,2,13&#xA;&#x9;s1.698-0.198,2.5-1L5,11.5L3.5,10z" />
+                <div class="icon-folder folder-amber">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
                     </svg>
                 </div>
                 <div class="text-folder">
-                    <h4>Marketing</h4>
-                    <p>24 elementos · 3.2 GB</p>
+                    <h4>Finanzas</h4>
+                    <p>12 elementos · 0.8 GB</p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3">
+
+        <div class="col-lg-3 col-md-6">
             <div class="folder-recent-card">
-                <div class="icon-folder">
-                    <svg width="40px" height="40px" viewBox="0 0 15 15" version="1.1" id="rocket" xmlns="http://www.w3.org/2000/svg">
-                        <path id="path7143" d="M12.5547,1c-2.1441,0-5.0211,1.471-6.9531,4H4&#xA;&#x9;C2.8427,5,2.1794,5.8638,1.7227,6.7773L1.1113,8h1.4434H4l1.5,1.5L7,11v1.4453v1.4434l1.2227-0.6113&#xA;&#x9;C9.1362,12.8206,10,12.1573,10,11V9.3984c2.529-1.932,4-4.809,4-6.9531V1H12.5547z M10,4c0.5523,0,1,0.4477,1,1l0,0&#xA;&#x9;c0,0.5523-0.4477,1-1,1l0,0C9.4477,6,9,5.5523,9,5v0C9,4.4477,9.4477,4,10,4L10,4z M3.5,10L3,10.5C2.2778,11.2222,2,13,2,13&#xA;&#x9;s1.698-0.198,2.5-1L5,11.5L3.5,10z" />
+                <div class="icon-folder folder-rose">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
                     </svg>
                 </div>
                 <div class="text-folder">
-                    <h4>Marketing</h4>
-                    <p>24 elementos · 3.2 GB</p>
+                    <h4>Recursos Humanos</h4>
+                    <p>36 elementos · 5.1 GB</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="row g-3 mt-3">
+        <div class="col-lg-12">
+            <div class="archive">
+                <h3 class="dashboard-titles">Archivos</h3>
+                <span>42 archivos</span>
+            </div>
+        </div>
+        <div class="files-table-wrapper">
+            <table class="files-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Propietario</th>
+                        <th>Modificado</th>
+                        <th>Tamaño</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="file-row">
+                        <td>
+                            <div class="file-name">
+                                <span class="file-badge badge-pdf">PDF</span>
+                                Propuesta_Q3.pdf
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-owner">
+                                <div class="owner-avatar avatar-blue">MR</div>
+                                María Ruiz
+                            </div>
+                        </td>
+                        <td class="file-date">12 jun 2026</td>
+                        <td class="file-size">2.4 MB</td>
+                    </tr>
+                    <tr class="file-row">
+                        <td>
+                            <div class="file-name">
+                                <span class="file-badge badge-fig">FIG</span>
+                                Identidad_Visual.fig
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-owner">
+                                <div class="owner-avatar avatar-green">DS</div>
+                                Diego Soto
+                            </div>
+                        </td>
+                        <td class="file-date">11 jun 2026</td>
+                        <td class="file-size">18.6 MB</td>
+                    </tr>
+                    <tr class="file-row">
+                        <td>
+                            <div class="file-name">
+                                <span class="file-badge badge-xls">XLS</span>
+                                Reporte_Ventas.xls
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-owner">
+                                <div class="owner-avatar avatar-amber">AL</div>
+                                Ana López
+                            </div>
+                        </td>
+                        <td class="file-date">10 jun 2026</td>
+                        <td class="file-size">860 KB</td>
+                    </tr>
+                    <tr class="file-row">
+                        <td>
+                            <div class="file-name">
+                                <span class="file-badge badge-img">IMG</span>
+                                Hero_Banner.png
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-owner">
+                                <div class="owner-avatar avatar-green">DS</div>
+                                Diego Soto
+                            </div>
+                        </td>
+                        <td class="file-date">9 jun 2026</td>
+                        <td class="file-size">4.1 MB</td>
+                    </tr>
+                    <tr class="file-row">
+                        <td>
+                            <div class="file-name">
+                                <span class="file-badge badge-doc">DOC</span>
+                                Contrato_Cliente.doc
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-owner">
+                                <div class="owner-avatar avatar-blue">MR</div>
+                                María Ruiz
+                            </div>
+                        </td>
+                        <td class="file-date">8 jun 2026</td>
+                        <td class="file-size">320 KB</td>
+                    </tr>
+                    <tr class="file-row">
+                        <td>
+                            <div class="file-name">
+                                <span class="file-badge badge-zip">ZIP</span>
+                                Assets_Web.zip
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-owner">
+                                <div class="owner-avatar avatar-rose">LM</div>
+                                Lucía Marín
+                            </div>
+                        </td>
+                        <td class="file-date">6 jun 2026</td>
+                        <td class="file-size">112 MB</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
